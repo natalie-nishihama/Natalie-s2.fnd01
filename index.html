@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!-- アイコン表示 -->
+  <link rel="icon" href="sqicon.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
+  </style>
+  <title>発表</title>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="header__container">
+      <h1 class="header__logo">Nat.</h1>
+      <!-- ハンバーガーボタン -->
+      <button type="button" class="hamburger">
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="" style="font-weight: bold;">home</a></li>
+          <li class="nav__item"><a href="" style="font-weight: bold;">フォトスポット</a></li>
+          <li class="nav__item"><a href="" style="font-weight: bold;">ミーティングスポット</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <!-- モーダル本体 中部-->
+    <div class="modal js-modal">
+      <div class="modal-container">
+        <!-- モーダルを閉じるボタン -->
+        <div class="modal-close js-modal-close">×</div>
+        <!-- モーダル内部のコンテンツ -->
+        <div class="modal-content">
+          <h3 style="text-align: center;">ひがし茶屋街</h3> 
+          <!-- 画像表示 -->
+          <img src="fk8-chubu.jpeg" style="width: 550px; height: auto;">
+          <p>住所：石川県金沢市東山１丁目<br>
+            このスポットについて：昼間は食べ歩きなどの観光スポットになっており車は進入禁止。夜間は人もいなくなり、車で行くことができます。
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <!-- モーダル本体 東海 -->
+    <div class="modal js-modal" id="tokai-modal1">
+      <div class="modal-container" id="tokai-modal2">
+        <!-- モーダルを閉じるボタン -->
+        <div class="modal-close js-modal-close" id="tokai-modal3">×</div>
+        <!-- モーダル内部のコンテンツ -->
+        <div class="modal-content" id="tokai-modal4">
+          <h3 style="text-align: center;"><ruby>両界山 横蔵寺<rt>りょうかいさんよこくらじ</rt></ruby></h3> 
+          <!-- 画像表示 -->
+          <img src="fk8-tokai.jpeg" style="width: 550px; height: auto;">
+          <p>住所：岐阜県<ruby>揖斐郡揖斐川町谷汲神原<rt>いびぐんいびがわちょうたにぐみかんばら</rt></ruby><br>
+            このスポットについて：赤い橋をバックに写真が取れます。紅葉以外の季節は人が少ないので穴場！１１月にはもみじまつりが開催されるのでおすすめです。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgdiv">
+      <h2>おすすめフォトスポット</h2>
+      <div class="mapimg">
+        <img src="map-japan.png" alt="日本地図">
+
+        <!-- ピン表示 -->
+
+        <div class="tooltipBlock">
+          <p id="toolTipKanto">関東</p>
+          <img src="pin.png" class="pin" id="pinKanto">
+        </div>
+
+        <div class="tooltipBlock">
+          <p id="toolTipTokai">岐阜県<br>両界山 横蔵寺</p>
+          <img src="pin.png" class="pin" id="pinTokai">
+        </div>
+
+        <div class="tooltipBlock">
+          <p id="toolTipChubu">石川県<br>ひがし茶屋街</p>
+          <img src="pin.png" class="pin" id="pinChubu">
+        </div>
+
+
+      </div>
+    </div>
+
+    <button id="btn1">行き先を決める！</button>
+
+  </div>
+  <!-- フッター -->
+  <footer>
+    <p">Nat.</p>
+  </footer>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
