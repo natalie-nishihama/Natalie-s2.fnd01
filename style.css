@@ -350,6 +350,26 @@ p#toolTipChubu:before {
     width: 90%;
 }
 
+/* モーダルのタグ */
+.btn-square-so-pop {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #b07d9d;/*色*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px #78556b;/*線色*/
+  font-family: "Kaisei Opti", serif;
+}
+
+.btn-square-so-pop:active {
+  /*押したとき*/
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
 /* モーダルを閉じるボタンの指定 */
 .modal-close {
     position: absolute;
@@ -361,7 +381,7 @@ p#toolTipChubu:before {
     width: 40px;
     height: 40px;
     color: #fff;
-    background: #000;
+    background: #514663;
     border-radius: 50%;
     cursor: pointer;
 }
